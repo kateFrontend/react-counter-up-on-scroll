@@ -1,6 +1,6 @@
 import { isVisible } from "@testing-library/user-event/dist/utils";
 import React, { useState } from "react";
-import CountUp from "react-countup/build/CountUp";
+import CountUp from 'react-countup';
 import ReactVisibilitySensor from "react-visibility-sensor";
 
 function App({ className, ...rest }) {
@@ -19,10 +19,10 @@ function App({ className, ...rest }) {
                     <ReactVisibilitySensor
                       active={!viewPortEntered}
                       onChange={
-                        (isVisible = {
+                        (isVisible => {
                           if(isVisible) {
                             setViewPortEntered(true);
-                          },
+                          }
                         })
                       }
                       delayedCall
@@ -47,10 +47,10 @@ function App({ className, ...rest }) {
                     <ReactVisibilitySensor
                       active={!viewPortEntered}
                       onChange={
-                        (isVisible = {
+                        (isVisible => {
                           if(isVisible) {
                             setViewPortEntered(true);
-                          },
+                          }
                         })
                       }
                       delayedCall
@@ -75,10 +75,10 @@ function App({ className, ...rest }) {
                     <ReactVisibilitySensor
                       active={!viewPortEntered}
                       onChange={
-                        (isVisible = {
+                        (isVisible => {
                           if(isVisible) {
                             setViewPortEntered(true);
-                          },
+                          }
                         })
                       }
                       delayedCall
@@ -103,10 +103,10 @@ function App({ className, ...rest }) {
                     <ReactVisibilitySensor
                       active={!viewPortEntered}
                       onChange={
-                        (isVisible = {
+                        (isVisible => {
                           if(isVisible) {
                             setViewPortEntered(true);
-                          },
+                          }
                         })
                       }
                       delayedCall
