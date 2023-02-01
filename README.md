@@ -1,9 +1,10 @@
 # Counter Up On Scrolling
 
+![cover](./src/scroll.jpg)
 
 ## 🦉 Main information
 
-IN WORK
+Scroll down to animate counter numbers in React.
 
 ## ⏲️ Run project
 
@@ -20,3 +21,21 @@ You may also see any lint errors in the console.
 ⚡ Setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+Install React CountUp
+
+```
+npm i react-countup
+```
+
+Install React visibility-sensor
+
+```
+npm i react-visibility-sensor
+```
